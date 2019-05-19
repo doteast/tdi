@@ -1,6 +1,6 @@
 - name: role_syntax
   service: molecule
-  command: 'cd $ROLEDIR && molecule syntax'
+  command: 'printenv && cd $ROLEDIR && molecule syntax'
 - name: release
   tag: master
   service: molecule
