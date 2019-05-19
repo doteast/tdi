@@ -3,4 +3,4 @@ molecule:
     image: molecule-base
     dockerfile: molecule-image/Dockerfile
   environment:
-    ROLEDIR = 'ansible/roles/webserver'
+    ROLEDIR: 'ansible/roles/webserver'
