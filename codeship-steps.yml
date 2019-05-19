@@ -1,11 +1,6 @@
-- type: parallel
-  name: integration
-  steps:
+- name: role_syntax
     - service: molecule
-      command: printenv
-    - service: molecule
-      # shell wrapper not required unless passing along env vars or combining commands
-      command: /bin/bash -c 'ls && echo ${CI_BUILD_ID}'
+      command: 'cd $ROLEDIR && molecule syntax'
 - name: release
   tag: master
   service: molecule
