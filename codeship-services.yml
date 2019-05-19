@@ -1,6 +1,6 @@
 molecule:
   build:
     image: molecule-base
-    dockerfile: molecule-image/Dockerfile
+    dockerfile: Dockerfile
   environment:
     ROLEDIR: 'ansible/roles/webserver'
