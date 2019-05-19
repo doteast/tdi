@@ -1,6 +1,6 @@
 - name: role_syntax
   service: molecule
-  command: /bin/bash -c 'cd ${ROLEDIR} && ls'
+  command: /bin/bash -c 'cd ${ROLEDIR} && molecule syntax'
 - name: release
   tag: master
   service: molecule
