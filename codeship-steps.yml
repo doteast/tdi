@@ -1,6 +1,6 @@
 - name: role_syntax
   service: molecule
-  command: printenv
+  command: /bin/bash -c 'cd ${ROLEDIR} && ls'
 - name: release
   tag: master
   service: molecule
