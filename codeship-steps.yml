@@ -3,7 +3,7 @@
   command: /bin/bash -c 'cd ${ROLEDIR} && molecule syntax'
 - name: role_dependecies
   service: molecule
-  command: /bin/bash -c 'cd ${ROLEDIR} && molecule dependecy'
+  command: /bin/bash -c 'cd ${ROLEDIR} && molecule dependency'
 - name: role_create
   service: molecule
   command: /bin/bash -c 'cd ${ROLEDIR} && molecule create'
