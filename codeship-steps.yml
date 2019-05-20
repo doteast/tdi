@@ -1,6 +1,12 @@
 - name: role_syntax
   service: molecule
   command: /bin/bash -c 'cd ${ROLEDIR} && molecule syntax'
+- name: role_dependecies
+  service: molecule
+  command: /bin/bash -c 'cd ${ROLEDIR} && molecule dependecies'
+- name: role_create
+  service: molecule
+  command: /bin/bash -c 'cd ${ROLEDIR} && molecule create'
 - name: release
   tag: master
   service: molecule
